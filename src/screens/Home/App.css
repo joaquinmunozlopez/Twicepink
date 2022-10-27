@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+.carrito{
+  font-size: 24px;
+  padding-bottom: 9px;
+  color: black;
+}
+
+.texto{
+  margin-top: 15%;
+}
+
+.link{
+  color: black;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.links{
+  text-decoration: none;
+}
+
+.principal_container{
+  margin: 50px;
+}
+
+.cards-container{
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}

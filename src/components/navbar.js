@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap"
 import { BsFillCartFill } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const Navegacion = () => {
     return(
@@ -10,12 +11,12 @@ const Navegacion = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#" >Inicio</Nav.Link>
-            <Nav.Link href="#" >Albums</Nav.Link>
-            <Nav.Link href="#" >Merch</Nav.Link>
+            <NavLink className="link" to={"/"} >Inicio</NavLink>
+            <NavLink className="link" to={"/Albumes"} >Albumes</NavLink>
+            <NavLink className="link" to={"/"} >Merch</NavLink>
           </Nav>
           <Nav className="carrito">
-            <Nav.Link href="#"><BsFillCartFill /></Nav.Link>
+            <NavLink className="link" to={"/"} ><BsFillCartFill /></NavLink>
           </Nav>
           </Navbar.Collapse>
         </Container>
