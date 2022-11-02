@@ -1,4 +1,4 @@
-import ListContainer from '../../components/itemListCoteiner';
+import ListContainer from '../../components/itemListContainer';
 import './App.css';
 
 function Home() {

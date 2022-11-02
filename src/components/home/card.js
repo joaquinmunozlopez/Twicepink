@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 
-function Tarjeta ({id, image, title, price}) {
+function Tarjeta ({id, image, title, price, category}) {
   return (
     <div>
-        <Link to={`titulo/${id}`}>
+        <Link to={`/${category}/${id}`}>
           <Card style={{ width: '18rem' }}>
              <Card.Img variant="top" alt={`album ${title}`} src={image}/>
              <Card.Body>

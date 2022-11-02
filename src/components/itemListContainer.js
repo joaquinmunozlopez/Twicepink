@@ -6,7 +6,8 @@ import { useParams } from "react-router-dom";
 const ListContainer = () => {
     const [filter, setFilter] = useState("");
   const [productos, setProductos] = useState([]);
-  const { cat } = useParams();
+  const { categoria } = useParams();
+  
 
   const getImages = () => {
     setTimeout(() => {
@@ -31,27 +32,29 @@ const ListContainer = () => {
       />
 
       <div className="cards-container">
-        {cat
+        {categoria
           ? productos
               .filter((producto) => producto.title.includes(filter))
-              .filter((producto) => producto.id === cat)
-              .map((product, i) => (
+              .filter((producto) => producto.category === categoria)
+              .map((product) => (
                 <Tarjeta
-                  id={i}
-                  key={i}
+                  id={product.id}
+                  key={product.id}
                   title={product.title}
                   image={product.image}
+                  category={product.category}
                   price={product.price}
                 />
               ))
           : productos
               .filter((producto) => producto.title.includes(filter))
-              .map((product, i) => (
+              .map((product) => (
                 <Tarjeta
-                  id={i}
-                  key={i}
+                  id={product.id}
+                  key={product.id}
                   title={product.title}
                   image={product.image}
+                  category={product.category}
                   price={product.price}
                 />
               ))}

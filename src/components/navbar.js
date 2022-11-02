@@ -12,8 +12,8 @@ const Navegacion = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavLink className="link" to={"/"} >Inicio</NavLink>
-            <NavLink className="link" to={"/Albumes"} >Albumes</NavLink>
-            <NavLink className="link" to={"/"} >Merch</NavLink>
+            <NavLink className="link" to={"/categoria/pop"} >pop</NavLink>
+            <NavLink className="link" to={"/categoria/kpop"} >pape</NavLink>
           </Nav>
           <Nav className="carrito">
             <NavLink className="link" to={"/"} ><BsFillCartFill /></NavLink>

@@ -1,9 +1,12 @@
-const Prueba = () => {
-    return(
-        <div className="texto">
-            <h1>¡Hola!</h1>
-        </div>
-    )
-}
 
-export default Prueba;
+const Albums = () => {
+  return(
+    <div>
+      <h1>
+        HOLA
+      </h1>
+    </div>
+  )
+};
+
+export default Albums;
